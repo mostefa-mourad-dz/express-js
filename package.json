@@ -1,0 +1,9 @@
+{
+  "name": "express-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MOURAD MOSTEFA <hm_mostefa@esi.dz>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
