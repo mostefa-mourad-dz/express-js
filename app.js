@@ -4,7 +4,7 @@ const path = require('path');
 
 
 /** Routers */
-//const professionalRouter = require('./routes/professionalRouter');
+const bookRouter = require('./routes/book.route');
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 /** Integrating the Routes */
-//app.use('/api/professional',professionalRouter);
+app.use('/api/book',bookRouter);
 
 app.use(function(err,req,res,next) {
   res.json({error:err.message});
