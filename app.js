@@ -11,8 +11,12 @@ const app = express();
 
 /***** Integration du MySQL */
 const db = require("./models/index");
-db.sequelize.sync({ force: true }).then(() => {
-    console.log("Drop and re-sync db.");
+db.sequelize.sync()
+.then(() => {
+  return "Connection to database was successfull !";
+})
+.catch((err) => {
+  return "Connection to database failed !";
 });
 
 /** Setting UP the envirement for express & passport */
