@@ -5,5 +5,7 @@
   "author": "MOURAD MOSTEFA <hm_mostefa@esi.dz>",
   "license": "MIT",
   "dependencies": {
+    "better-sqlite3": "^7.5.1",
+    "express": "^4.17.3"
   }
 }
